@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Item Details</title>
+</head>
+<style type="text/css">
+  body {
+    margin: 0px;
+    padding:0px;
+    font-size: 13px;
+    background-color: grey;
+    color: orange;
+    font-family: sans-serif;
+  }
+  .item-details {
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+  }
+  .header {
+    text-align: center;
+    border-bottom: 1px solid orange;
+    background-color: black;
+    padding-top: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  p {
+    margin-top: 20px;
+  }
+</style>
+<body>
+  <header class="header">
+      <h4>Item Details</h4>
+  </header>
+  <div class="item-details">
+      {% if item.id %}
+        <span><strong>Item Id: {{ item.id }}</strong></span>
+        <span>{{ item.description }}</span>
+        <p>
+          <a href="/main/items/">Back <<<</a>
+        </p>
+      {% else %}
+        <h1>Item not found</h1>
+        <p>
+          <a href="/main/items/">Back <<<</a>
+        </p>
+      {% endif %}
+  </div>
+</body>
+<script type="text/javascript" src="{{ url_for('static', path='/js/test_window_data.js') }}"></script>
+</html>

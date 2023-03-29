@@ -1,0 +1,25 @@
+  body {
+    margin: 0px;
+    padding:0px;
+    background-color: grey;
+    color: orange;
+    font-family: sans-serif;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+  }
+  li {
+    padding: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  .header-margin {
+    margin-left: 20px;
+  }

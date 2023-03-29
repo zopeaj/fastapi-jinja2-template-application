@@ -1,0 +1,25 @@
+Users
+  userid
+  name
+  phonenumber
+  lastname
+  firstname
+  emails
+  address
+  country
+
+Hotels
+  hotelsid
+  name
+  location
+  country
+  city
+
+
+Reservations
+  user_id
+  reservations_id
+  hotels_id
+  date_time
+
+
